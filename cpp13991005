@@ -1,0 +1,130 @@
+#include<iostream> 
+
+ 
+
+using namespace std; 
+
+ 
+
+class Animal { 
+
+public: 
+
+    Animal() { 
+
+ 
+
+        cout << "Animal"; 
+
+    } 
+
+ 
+
+ 
+
+}; 
+
+ 
+
+class Mammal : public Animal { 
+
+public: 
+
+ 
+
+    Mammal() { 
+
+        cout << "Mammal"; 
+
+    } 
+
+ 
+
+    virtual void move(); 
+
+ 
+
+}; 
+
+ 
+
+ 
+
+class Reptile : public Animal { 
+
+ 
+
+public: 
+
+ 
+
+    Reptile() { 
+
+        cout << "Reptile"; 
+
+    } 
+
+ 
+
+    virtual void move(); 
+
+ 
+
+}; 
+
+ 
+
+class Dog : Mammal { 
+
+public: 
+
+    Dog() { 
+
+ 
+
+        cout << "Dog"; 
+
+    } 
+
+ 
+
+    void move() { 
+
+ 
+
+        cout << "walk and run"; 
+
+    } 
+
+}; 
+
+ 
+
+class snake : public Mammal { 
+
+public: 
+
+ 
+
+    snake() { 
+
+ 
+
+        cout << "snake"; 
+
+    } 
+
+ 
+
+    void move() { 
+
+ 
+
+        cout << "crawl"; 
+
+    } 
+
+ 
+
+};
+
